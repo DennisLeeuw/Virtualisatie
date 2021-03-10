@@ -4,7 +4,6 @@
 \usepackage[ascii]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[dutch,english]{babel}
-\usepackage{imakeidx}
 \usepackage{syntonly}
 \usepackage[official]{eurosym}
 %\usepackage[graphicx]
@@ -18,12 +17,17 @@
 \addtokomafont{labelinglabel}{\sffamily}
 \usepackage{listings}
 \usepackage{adjustbox}
-\usepackage{color}
+
+%define inch
+\usepackage{mathpazo,amsmath}
+\def\inch#1{#1''}
 
 % Turn on indexing
+\usepackage{imakeidx}
 \makeindex
 
 % Define colors
+\usepackage{color}
 \definecolor{ashgrey}{rgb}{0.7, 0.75, 0.71}
 
 % Listing style
@@ -61,7 +65,7 @@
 
 \copyright\ 2021 Dennis Leeuw\\
 
-\begin{figure}
+\begin{figure}[H]
 \includegraphics[width=0.3\textwidth]{CC-BY-SA-NC.png}
 \end{figure}
 
@@ -105,15 +109,28 @@
 \subsection{Hypervisor Opdracht}
 \input{hypervisor_opdracht}
 \section{Hypervisors}
+\input{hypervisors}
 \subsection{VirtualBox}\index{VirtualBox}
+\input{virtualbox}
 \subsection{VMWare}\index{VMWare}
-\subsection{Citrix}\index{Citrix}
+\input{vmware}
 \subsection{Xen}\index{Xen}
+\input{xen}
 \subsection{KVM}\index{KVM}
+\input{kvm}
 \subsection{Hyper-V}\index{Hyper-V}
+\input{hyper-v}
 \subsection{Parallels}\index{Parallels}
-\section{Server Virtualisatie}\index{Server virtualisatie}
+\input{parallels}
+\section{Server virtualisatie}\index{Server virtualisatie}
+\input{servervirtualisatie}
+\subsection{Rekenclusters}\index{Rekencluster}
+\input{rekencluster}
 \subsection{High Availibility}\index{High Availibility}
+\input{high_availability}
+\input{failover}
+\subsection{Server hardware}
+\input{server_hardware}
 \section{Desktop Virtualisatie}\index{Desktop virtualisatie}
 \section{The Cloud: Virtual Private Servers}\index{VPS}\index{Virtual Private Server}
 

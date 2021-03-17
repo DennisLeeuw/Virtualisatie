@@ -79,8 +79,8 @@
 
 \frontmatter
 \chapter{Over dit Document}
-\input{DocOver}
-\input{DocChanges}
+\input{src/DocOver}
+\input{src/DocChanges}
 
 %%%%%%%%%%%%%%%%%
 %%% De inhoud %%%
@@ -89,58 +89,73 @@
 
 \mainmatter
 \chapter{Simulatie, Emulatie en Virtualisatie}\index{Simulatie}\index{Emulatie}\index{Virtualisatie}
-\input{sim_emu_virt}
+\input{src/sim_emu_virt}
 \section{Wat is virtualisatie?}
-\input{wat_is_virtualisatie}
+\input{src/wat_is_virtualisatie}
 
 \chapter{The Cloud}\index{Cloud}\index{The Cloud}
-\input{virt_cloud}
+\input{src/virt_cloud}
 \section{IaaS}\index{IaaS}\index{Infrastructure as a Service}
-\input{iaas}
+\input{src/iaas}
 \section{PaaS}\index{PaaS}\index{Platform as a Service}
-\input{paas}
+\input{src/paas}
 \section{SaaS}\index{SaaS}\index{Software as a Service}
-\input{saas}
+\input{src/saas}
 
 \chapter{Machine Virtualisatie (IaaS)}\index{VM}\index{Virtual Machine}\index{IaaS}
-\input{vm}
+\input{src/vm}
 \section{Hypervisor}\index{Hypervisor}
-\input{hypervisor}
+\input{src/hypervisor}
 \subsection{Hypervisor Opdracht}
-\input{hypervisor_opdracht}
+\input{src/hypervisor_opdracht}
 \section{Hypervisors}
-\input{hypervisors}
+\input{src/hypervisors}
 \subsection{VirtualBox}\index{VirtualBox}
-\input{virtualbox}
+\input{src/virtualbox}
 \subsection{VMWare}\index{VMWare}
-\input{vmware}
+\input{src/vmware}
 \subsection{Xen}\index{Xen}
-\input{xen}
+\input{src/xen}
 \subsection{KVM}\index{KVM}
-\input{kvm}
+\input{src/kvm}
 \subsection{Hyper-V}\index{Hyper-V}
-\input{hyper-v}
+\input{src/hyper-v}
 \subsection{Parallels}\index{Parallels}
-\input{parallels}
+\input{src/parallels}
 \section{Server virtualisatie}\index{Server virtualisatie}
-\input{servervirtualisatie}
+\input{src/servervirtualisatie}
 \subsection{Rekenclusters}\index{Rekencluster}
-\input{rekencluster}
+\input{src/rekencluster}
 \subsection{High Availibility}\index{High Availibility}
-\input{high_availability}
-\input{failover}\index{Failover}
+\input{src/high_availability}
+\input{src/failover}\index{Failover}
 \subsection{Server hardware}\index{Server hardware}
-\input{server_hardware}
+\input{src/server_hardware}
 \subsection{Server virtualisatie opdrachten}
-\input{server_virtualisatie_opdrachten}
+\input{src/server_virtualisatie_opdrachten}
 \section{Desktop Virtualisatie}\index{Desktop virtualisatie}
+\input{src/desktop_virtualisatie}
+\subsection{VDI - Vitrual Desktop Infrastructure}\index{VDI}\index{Virtual Desktop Infrastructure}
+\input{src/vdi}
+\subsection{RDS - Remote Desktop Service}\index{RDS}\index{Remote Desktop Service}
+\input{src/rdp}
+\subsection{ICA - Independent Computing Architecture}\index{ICA}\index{Independent Computing Architecture}
+\input{src/ica}
+\subsection{Nadelen desktop virtualisatie}
+\input{src/desktopvirt_nadelen}
+\input{src/desktopvirt_gpu}
+\subsection{Remote Desktop Opdracht}
+\input{src/desktopvirt_opdracht}
 \section{The Cloud: Virtual Private Servers}\index{VPS}\index{Virtual Private Server}
 
 \chapter{Webhosting (PaaS)}\index{PaaS}\index{Webhosting}
 \section{LAMP}\index{LAMP}
 
 \chapter{Applicatie Virtualistie (SaaS)}\index{SaaS}\index{Applicatie virtualisatie}
-\input{app_virt}
+\input{src/app_virt}
+\section{Citrix, Microsoft en VMWare}
+\subsection{Citrix}
+\input{src/winframe}
 \section{Hosted applications}\index{Hosted applications}
 \section{Containerisatie}\index{Containers}
 \section{Containerisatie software}\index{Containerisatie}

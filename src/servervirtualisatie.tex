@@ -1,0 +1,16 @@
+In de datacentra van providers of bedrijven draaien er servers en desktops als virtuele machines. De eisen voor virtuele servers en desktops verschillen van elkaar. In deze paragraaf zullen we de server virtualisatie behandelen. We hebben het dan voornamelijk over servers die draaien op 19\inch machines en blades. De gevirtualiseerde machines zijn vaak servers die bijvoorbeeld dienen als database- of webserver. Een andere veel gebruikte toepassing is als rekennodes in rekenclusters.
+
+Bij de eerste webservers draaiden bijvoorbeeld Apache en MySQL op \'e\'en en dezelfde server. Dit was hardware en de performance van de website was afhankelijk van de kracht van de fysieke machine. Al snel werden websites groter dan \'e\'en fysieke machine aankon. De functionaliteit werd gesplitst en de database server kreeg zijn eigen machine. Natuurlijk werd dit uiteindelijk ook te klein en werden er database clusters neergezet en kwamen er vele webservers die dezelfde website aanboden. Via loadbalancing werd de totale vraag naar een bepaalde website verdeeld over de verschillende servers. Zie voor een overzicht figuur \ref{fig:WSDB-network}.
+
+\begin{figure}[H]
+\includegraphics[scale=0.75]{loadbalancer_en_DB_cluster.png}
+\centering
+\caption{Webservers met loadbalancer en DB cluster}
+\label{fig:WSDB-network}
+\end{figure}
+
+Een loadbalancer\index{loadbalancer} is een apparaat dat aan de Internet kant een vraag voor een dienst of een IP adres aanneemt en deze doorzet naar \'e\'en van de servers die hij aan de interne kant heeft. Door voor elke vraag een andere server te gebruiken worden de aanvragen vanaf het Internet verdeeld over verschillende machines zodat de de load verdeeld wordt. Elke server krijgt dus maar een deel van de aanvragen te verwerken. Het is hierbij van belang de alle servers op dezelfde manier zijn ingericht.
+
+Voor het serverpark met webservers worden vaak virtuele machines gebruikt zodat er op een eenvoudige manier \'e\'en master image gemaakt kan worden die uitgerold wordt over de verschillende virtual machines en er zo gelijke webservers ontstaan. De images van de servers staan veelal op de SAN.
+
+MySQL kan ge\"installeerd worden als stand-alone server of als cluster. In een cluster opzet werken de MySQL servers samen om te zorgen dat de database consistent is zodat een query op elk van de servers hetzelfde antwoord geeft. De database draait in het geheugen en wordt verdeeld over de verschillende harddisks opgeslagen. Het cluster gebruikt dus geen SAN, beter is het om het cluster op te vatten als \'e\'en grote database. De verschillende clusternodes kunnen prima draaien op een hypervisor, of beter op verschillende hypervisors.

@@ -1,0 +1,10 @@
+Een omgeving met honderden of duizenden desktops kan snel complex worden en resource management wordt dan meer iets voor geautomatiseerde processen dan voor handmatige acties van systeembeheerders. De software die hiervoor ontwikkeld is heet een Connection Broker. Connection Brokers worden o.a. ingezet voor:
+\begin{itemize}
+\item het controleren van gebruikers authenticatie,
+\item het toewijzen van gebruikers aan VMs,
+\item het aan en uitschakelen van VMS,
+\item het load balancen van VMs over de beschikbare servers,
+\item het beheer van de desktop images.
+\end{itemize}
+
+Een connection broker doet dus dienst als een soort van load balancer tussen de gebruiker en de workload op een hypervisor. Op basis van regels die de systeembeheerder heeft opgesteld worden gebruikers verbonden met de VM waarop ze mogen werken. De kracht van VDI zit in het optimaal gebruik van resources dat werkt niet als elke gebruiker een vast werkstation heeft, de connection broker zorgt voor een optimaal gebruik van resources en zorgt ervoor dat elke gebruiker toch het idee heeft dat hij verbonden is met zijn eigen machine.

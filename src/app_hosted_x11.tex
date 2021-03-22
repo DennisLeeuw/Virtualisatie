@@ -1,0 +1,16 @@
+X is in 1984 ontstaan op het Massachusetts Institute of Technology (MIT). De naam X is onstaan omdat het de opvolger was, en veel code hergebruikte van, W (een grafische voorganger). X was onderdeel van Project Athena waarin IBM, DEC (Digital Equipment Company) en het MIT samenwerkten om een systeem te bouwen voor educatief gebruik. X was niet de eerste grafische interface voor computers. In 1973 had Xerox al de Alto gemaakt en Apple had in 1983 al de Lisa (de voorganger van de Macintosh) uigebracht.
+
+Het enige complexe aan X is dat de termen client en server soms wat verwarrend zijn. De meeste gebruikers zijn eraan gewend dat de server de machine is in de serverruimte en de client de machine die ze op hun bureau of in hun hand hebben. In het ontwerp van X is dat andersom. Op de client machine draait de server die in opdracht van de applicatie schermwijzigingen maakt. Dus op de server in de serverruimte draait de applicatie die dan de client heet en deze stuurt naar de server op de client opdrachten om bijvoorbeeld een window, een button of een menu te laten zien. Als je dit in je achterhoofd houdt dan is X niet moeilijk meer.
+
+De X-server doet, in de basis, maar twee dingen:
+\begin{enumerate}
+\item Het stuurt het beeldscherm aan via de grafische kaart zodat er iconen en andere grafische elementen op het scherm getekend worden.
+\item Het stuurt de toetsaanslagen en muisbewegingen door naar de applicatie
+\end{enumerate}
+De X-server is dan ook degene die diensten verleent aan de applicatie en in opdracht van de applicatie diensten uitvoert. Vandaar dat de server op de client draait.
+
+De X-client is de applicatie die op de server draait en aan de X-server vraagt om bepaalde zaken aan de gebruiker te laten zien, zoals bijvoorbeeld het tonen van een window en daar een bepaalde tekst in zetten.
+
+Het procotol dat gebruikt wordt tussen de client en de server is inmiddels in zijn 11de versie en wordt dan ook vaak het X11-protocol genoemd. We zien dat we hier met een client-server architectuur te maken hebben. Een deel van actie wordt op de server uitgevoerd en een deel op de client. Er is binnen een applicatie dus een scheiding tussen de functionaliteit van de applicatie en de presentatie (interface) van de applicatie. Elk besturingssysteem waarvoor een X-server beschikbaar is (VMS, Unix, Linux, Mac OS X en Windows) kan dus een applicatie voorzien van een interface.
+
+Het X11-protocol is een graphics-only oplossing. Het geeft een applicatie-interface weer op afstand. Voor het doorsturen van audio of video naar de gebruiker zijn er andere oplossingen.

@@ -1,0 +1,11 @@
+Een port van Dockers' containerd naar Windows, en daarvoor moest Windows aangepast worden om zaken als cgroups (resource control) en namespaces te ondersteunen en de Union file system. Begonnen in Windows Server 2016 en Windows 10. Integratie met Hyper-V. Draait alleen Windows containers (windows applicaties).
+
+Bron: https://www.youtube.com/watch?v=85nCF5S8Qok
+
+Compute Service: Geen publieke interface (closed API).
+Public interface to containers.
+Manages running contairs, replaces containerd, C\# and Go language bindings.
+
+Windows: Communicatie met de kernel via DLLs en services, syscall zijn niet gedocumenteerd (voor het publiek). Dit bemoeilijkt het maken van een kleine container met minimale zaken, er zouden te veel DLLs meekomen ivm dependencies. Om dit op te vangen is SMSS soort gateway tussen de container en de resources van het host OS.
+windowsservercore: is Windows Server in een container image, dat is groot (9.3 G). Wel enorm goed in het handelen van bestaande applicaties, alles is.
+nanoserver: Smaller, sneller, geen grafische interface enzo.

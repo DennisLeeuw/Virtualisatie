@@ -1,0 +1,6 @@
+Een virtuele switch waarbij de host en de VMs met elkaar verbonden zijn, maar waarbij er geen verbinding naar buiten is wordt in dit document een management netwerk genoemd, omdat dat is waar het meestal voor gebruikt wordt. Vanaf de host kunnen op deze manier de verschillene VMs gemanaged worden door bijvoorbeeld gebruik te maken van remote desktop applicaties of een andere vorm van remote log
+in.
+
+Bij Hyper-V heet dit netwerk Internal, bij VirtualBox wordt het Host-only Adapter genoemd.
+
+Het virtuele netwerk is ge\"isoleerd van de buitenwereld en als je dus geen toegang hebt tot de host dan kan je ook niet bij de beheerinterface van de VMs. Het gevaar is natuurlijk wel dat als je toegang hebt tot een VM je ook, met voldoende rechten, naar de beheerinterface van de host kan.

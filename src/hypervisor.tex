@@ -2,7 +2,7 @@ Een hypervisor is een stuk software die hardware virtualisatie mogelijk maakt. E
 
 Hypervisor type 1 is een hypervisor die op bare metal draait. De hypervisor levert zijn eigen besturingssysteem en maakt rechtstreeks gebruik van de beschikbare hardware om deze aan te bieden aan de virtuele machines.
 
-De andere variant is een Hypervisor type 2, deze draait op een bestaand besturingssysteem. Je hypervisor is dus eigenlijk een applicatie op een besturingssysteem en maakt gebruik van het onderliggende besturingssysteem om hardware aan te bieden aan de virtuele machines. Deze laatste techniek is simpeler omdat een type 2 hypervisor gebruik kan maken van de drivers van het OS waarop het draait.
+De andere variant is een Hypervisor type 2, deze draait op een bestaand besturingssysteem. De hypervisor is dus eigenlijk een applicatie op een besturingssysteem en maakt gebruik van het onderliggende besturingssysteem om hardware aan te bieden aan de virtuele machines. Deze laatste techniek is simpeler omdat een type 2 hypervisor gebruik kan maken van de drivers van het OS waarop het draait.
 
 Een hypervisor verdeelt de bestaande hardware op in stukjes en biedt deze aan als een nieuwe machine. De hypervisor doet dus alsof hij allemaal zelfstandige computers aanbiedt, vandaar dat we dat virtuele machines noemen (virtual machines), wat me meestal afkorten als VM. De machine (en het OS) waarop de hypervisor draait wordt de Host genoemd, de virtuele machine die op de hypervisor draait wordt de Guest genoemd.
 

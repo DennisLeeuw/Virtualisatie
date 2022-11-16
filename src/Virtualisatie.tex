@@ -10,6 +10,7 @@
 \usepackage{graphicx}
 \graphicspath{ {./images/} }
 \usepackage{float}
+\usepackage{xurl}
 \usepackage{hyperref}
 \hypersetup{colorlinks=true, linkcolor=blue, citecolor=blue, filecolor=blue, urlcolor=blue, pdftitle=, pdfauthor=, pdfsubject=, pdfkeywords=}
 \usepackage{tabularx}
@@ -93,6 +94,7 @@
 \section{Wat is virtualisatie?}
 \input{src/wat_is_virtualisatie}
 \input{src/virt_history}
+\input{src/virt_IBM_film}
 
 \chapter{The Cloud}\index{Cloud}\index{The Cloud}
 \input{src/virt_cloud}
@@ -141,6 +143,8 @@
 \input{src/hyper-v_vm_new}
 \subsection{Parallels}\index{Parallels}
 \input{src/parallels}
+\subsection{Hypervisors opdracht}
+\input{src/hypervisors_opdracht}
 \section{Server virtualisatie}\index{Server virtualisatie}
 \input{src/servervirtualisatie}
 \subsection{Rekenclusters}\index{Rekencluster}
@@ -154,8 +158,6 @@
 \input{src/server_virtualisatie_opdrachten}
 \section{The Cloud: Virtual Private Servers}\index{VPS}\index{Virtual Private Server}
 \input{src/cloud_vps}
-\subsection{PaaS}
-\input{src/cloud_paas}
 \section{Virtuele netwerken}
 \input{src/vnetwork}
 \subsection{Virtual Network: verbinding met de wereld}
@@ -182,6 +184,10 @@
 \subsection{Remote Desktop Opdracht}
 \input{src/desktopvirt_opdracht}
 
+\chapter{Middleware (PaaS)}\index{PaaS}\index{Platform as a Service}
+\section{LAMP}
+\input{src/cloud_lamp}
+
 \chapter{Applicatie Virtualistie (SaaS)}\index{SaaS}\index{Applicatie virtualisatie}
 \input{src/app_virt}
 \section{Terminal Applicaties}
@@ -193,6 +199,8 @@
 \subsection{Citrix}
 \input{src/citrix_winframe}
 \input{src/citrix_ica}
+\subsubsection{XenApp}
+\input{src/citrix_xenapp}
 \subsection{Microsoft}
 \input{src/rds}
 \section{Web Applicaties}
